@@ -7,7 +7,6 @@ tags: counting
 published: true
 ---
 
-# People Counting Dataset (PCDS)
 The purpose of people counting dataset is to count the number of people passing through a specified scene. In this dataset, we published a set of videos recorded in the entrance of bus scene by Kinect V1 camera. Each depth video has its corresponding RGB video. And each pair of videos is labeled to indicate the number of pedestrians passing through the scene.
 
 - This dataset contains 5,464 pair of videos, including depth video, and color video. And total up to 10,908 videos.
@@ -90,7 +89,7 @@ We only focus on the deth video and the color video is an accessory. We cannot g
 
 ## Citation
 If you use this dataset, it is necessary to cite the following paper:
-> Song, H., Sun, S., Akhtar, N., Zhang, C., Li, J., & Mian, A. (2018). Benchmark data and method for real-time people counting in cluttered scenes using depth sensors, 14(8), 1–14. Retrieved from http://arxiv.org/abs/1804.04339
+> Song, H., Sun, S., Akhtar, N., Zhang, C., Li, J., & Mian, A. (2018). Benchmark data and method for real-time people counting in cluttered scenes using depth sensors, 14(8), 1ï¿½14. Retrieved from http://arxiv.org/abs/1804.04339
 
 
 ## License
