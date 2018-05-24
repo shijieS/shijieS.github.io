@@ -5,7 +5,9 @@ css:
 published: true
 ---
 <div class="row">
+  start
   {% for post in paginator.posts %}
+  {{ post.layout }} hello
   {% if post.layout == "research" %}
   <div class="col s12">
     <div class="card hoverable">
