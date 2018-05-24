@@ -1,9 +1,12 @@
 ---
 layout: page
-css: ["index.css"]
+css:
+  - index.css
+published: true
 ---
 <div class="row">
   {% for post in paginator.posts %}
+  {% if post.layout == "post" %}
   <div class="col s12">
     <div class="card hoverable">
       <div class="card-content">
@@ -21,6 +24,7 @@ css: ["index.css"]
       </div>
     </div>
   </div>
+  {% endif %}
   {% endfor %}
   <div class="col s12 center-align">
     <ul class="pagination">
