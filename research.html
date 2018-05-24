@@ -6,8 +6,7 @@ published: true
 ---
 <div class="row">
   start
-  {% for post in paginator.research %}
-  {{ site.categories }} hello
+  {% for post in paginator.posts %}
   {% if post.layout == "research" %}
   <div class="col s12">
     <div class="card hoverable">
