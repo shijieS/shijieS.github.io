@@ -4,7 +4,7 @@ title: People counting in clusttered environment by RGB-D camera
 date: '2017-03-25 01:30:13 +0800'
 categories: research counting
 tags: counting
-published: true
+published: false
 ---
 
 # People Counting Dataset (PCDS)
