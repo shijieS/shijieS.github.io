@@ -17,6 +17,9 @@ This project starts from 2015.01 to 2017.05.
 We have designed a software and hardware system. 
 
 The software system includes: calibration, one-camera counting, double camera counting, recording, auto testing. The hardware system. 
+![people counting by single camera]({{site.baseurl}}/media/people-counting-single-camera.png)
+
+
 
 The hardware system includes: designed RGB-D camera, redesigned mini-computer. Besides, we also integrated our algorithm into the camera. 
 
