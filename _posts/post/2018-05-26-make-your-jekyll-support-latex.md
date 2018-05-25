@@ -41,7 +41,7 @@ markdown: kramdown
   <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
 {% endhighlight %}
 
-Finally, I found this [this link](https://github.com/github/pages-gem/issues/307), went to his/her repostory and get the idear of position to put.
+Finally, I found this [this link](https://github.com/github/pages-gem/issues/307), went to his/her repostory and got the idear of position to put these codes.
 
 I should put these codes in the all-shared layout file which is '_include/head.html', see this file code as following
 
@@ -52,34 +52,11 @@ I should put these codes in the all-shared layout file which is '_include/head.h
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>
-      {% if page.title %}
-      {{ page.title | escape }}
-      {% else %}
-      {{ site.title | escape }}
-      {% endif %}
     </title>
     <link rel="shortcut icon" type="image/x-icon" href="{{site.baseurl}}/assets/res/logo-half.png">
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.min.css">
     <link rel="stylesheet" href="//fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="{{site.baseurl}}/assets/css/main.css">
-    {% for css in layout.css %}
-    {% if css contains "//" %}
-    <link rel="stylesheet" href="{{css}}">
-    {% else %}
-    <link rel="stylesheet" href="{{site.baseurl}}/assets/css/{{css}}">
-    {% endif %}
-    {% endfor %}
-    {% for css in page.css %}
-    {% if css contains "//" %}
-    <link rel="stylesheet" href="{{css}}">
-    {% else %}
-    <link rel="stylesheet" href="{{site.baseurl}}/assets/css/{{css}}">
-    {% endif %}
-    {% endfor %}
-    <link rel="stylesheet" href="{{site.baseurl}}/assets/css/syntax.css">
-    <link rel="alternate" type="application/rss+xml" title="RSS" href="{{site.baseurl}}/feed.xml">
-    <link rel="sitemap" type="application/xml" title="Sitemap" href="{{site.baseurl}}/sitemap.xml">
-    {% seo title=false %}
     
     <!-- <script type="text/x-mathjax-config">
       MathJax.Hub.Config({
