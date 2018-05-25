@@ -17,23 +17,26 @@ The software system includes: calibration, one-camera counting, double camera co
 
 The hardware system includes: designed RGB-D camera, redesigned mini-computer. Besides, we also integrated our algorithm into the camera. 
 
-#### published a dataset [github](https://github.com/shijieS/people-counting-dataset.git)
+#### published a dataset 
+\[[github](https://github.com/shijieS/people-counting-dataset.git)\]
+
 We have published a dataset, called **P**eople **c**ounting **d**ata**s**et (PCDS). It is divided into 4 sub-categories: N+C+, N+C-, N-C+, N-C- according to the sunlight and crowed, as shown in the following table.
+
+
 
 |          |  N+C+  |  N+C-  | N-C+ | N-C- |
 |:--------:|:------:|:------:|:----:|:----:|
 | sunlight | strong | strong | weak | weak |
 | crowed   |   yes  |   no   |  yes |  no  |
-
-There are total up to 5,464 videos in this dataset. The detail number of people entering and exiting the bus in each category can be referred from the following table.
-
-|          | N+C+ | N+C- |  N-C+ | N-C- |
-|:--------:|:----:|:----:|:-----:|:----:|
 | entering |  937 |  616 |  5427 | 2704 |
 | exiting  | 1149 |  668 |  6647 | 2760 |
 | total    | 2086 | 1284 | 12074 | 5464 |
 
-#### published a paper [pdf](https://www.researchgate.net/publication/324492648_Benchmark_data_and_method_for_real-time_people_counting_in_cluttered_scenes_using_depth_sensors) 
+There are total up to 5,464 videos in this dataset. The detail number of people entering and exiting the bus in each category can be referred from the following table.
+
+#### published a paper 
+[pdf](https://www.researchgate.net/publication/324492648_Benchmark_data_and_method_for_real-time_people_counting_in_cluttered_scenes_using_depth_sensors) 
+
 We have written a paper to clarify our algorithm. This paper's name is "Benchmark data and method for real-time people counting in cluttered scenes using depth sensors".
 
 Besides, two patent has been published, as follows:
