@@ -1,11 +1,13 @@
 ---
+date: '2015-01-01 01:30:13 +0800'
 layout: research
 title: People counting by RGB-D camera
-date: '2015-01-01 01:30:13 +0800'
-categories: research counting
-tags: counting
+categories:
+  - research counting
+tags:
+  - counting
 published: true
-comments: 1
+comments: '1'
 ---
 The purpose of this project is to counting the people passing through the bus by RGB-D camera accurately.
 
@@ -26,7 +28,7 @@ We have published a dataset, called **P**eople **c**ounting **d**ata**s**et (PCD
 
 
 |          |  N+C+  |  N+C-  | N-C+ | N-C- |
-|:--------:|:------:|:------:|:----:|:----:|
+|----------|--------|--------|------|------|
 | sunlight | strong | strong | weak | weak |
 | crowed   |   yes  |   no   |  yes |  no  |
 | entering |  937 	|  616 	 |  5427 | 2704 |
