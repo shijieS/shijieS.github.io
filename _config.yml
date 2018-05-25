@@ -60,7 +60,7 @@ prose:
   metadata:
     _posts:
       - name: "layout"
-        filed:
+        field:
           element: "select"
           label: "Add Layout"
           placeholder: "Choose Layout"
