@@ -29,7 +29,7 @@ user_email: "shijieSun[shift+2]chd.edu.cn"
 # contact_url: "https://goo.gl/tVljbV"
 # google_tracking_id: "UA-96359860-1"
 #google_site_verification: "UA-96359860-1"
-disqus_shortname: "https-shijies-github-io."
+disqus_shortname: "https-shijies-github-io"
 
 # Build settings
 markdown: kramdown
