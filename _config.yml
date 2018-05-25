@@ -60,19 +60,43 @@ prose:
   metadata:
     _posts:
       - name: "layout"
+        filed:
+          element: "select"
+          label: "Add Layout"
+          placeholder: "Choose Layout"
+          options:
+            - name: "Research"
+              value: "research"
+            - name: "Post"
+              value: "post"
+      - name: "categories"
         field:
-          element: "hidden"
-          value: "blog"
+          element: "multiselect"
+          label: "Add Categories"
+          placeholder: "Choose Categories"
+          options:
+            - name: "Math"
+              value: "math"
+            - name: "Idear"
+              value: "idear"
+            - name: "Tools"
+              value: "tools"
+            - name: "Programming"
+              value: "programming"
       - name: "tags"
         field:
           element: "multiselect"
           label: "Add Tags"
           placeholder: "Choose Tags"
           options:
-            - name: "Apples"
-              value: "apples"
-            - name: "Bananas"
-              value: "bananas"
+            - name: "tracking"
+              value: "tracking"
+            - name: "detection"
+              value: "detection"
+            - name: "deep-learning"
+              value: "deep learning"
+            - name: "tools"
+              value: "tools"
     _posts/static:
       - name: "layout"
         field:
