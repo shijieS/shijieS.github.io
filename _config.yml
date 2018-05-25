@@ -32,6 +32,7 @@ user_email: "shijieSun[shift+2]chd.edu.cn"
 disqus_shortname: "back-to-the-console"
 
 # Build settings
+timezone: Asia/Kuala_Lumpur
 markdown: kramdown
 gems:
   - jekyll-feed
