@@ -8,6 +8,7 @@ tags:
   - tools
 comments: '1'
 ---
+Cool Example: $$ x^2 + y^2 = \frac{z^3}{\mathcal{E}_{\delta}}$$
 If you want to solve the problem immediately, just go to [this link](https://github.com/github/pages-gem/issues/307).
 
 Or, reading on 
