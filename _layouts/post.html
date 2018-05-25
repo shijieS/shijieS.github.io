@@ -41,8 +41,8 @@ js: ["post.js"]
     {{ content }}
     
     ====
-    pageid: {{page.id}}
-    pageurl: "{{site.url}}{{site.baseurl}}{{page.url}}"
+    pageid: "{{page.id}}"
+    pageurl: "{{page.url}}"
   </div>
 </div>
 {% if site.disqus_shortname and page.comments %}
