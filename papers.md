@@ -6,7 +6,6 @@ published: true
 
 #### Papers
 - Song, H., **Sun, S.**, Akhtar, N., Zhang, C., Li, J., & Mian, A. (2018). Benchmark data and method for real-time people counting in cluttered scenes using depth sensors, 14(8), 1–14. Retrieved from http://arxiv.org/abs/1804.04339
-
 - 孙士杰，宋焕生，张朝阳，张文涛. 点云下地平面检测的RGB-D相机外参自动标定[J]. 中国图形图像学报. 2018(6).
 - 王璇, 李倩丽, 宋焕生, **孙士杰**. 基于AdaBoost的公交客流量统计算法[J]. 计算机应用研究, 2018(3).
 - 刘瑞芝, **孙士杰**, 王菽裕,等. 基于三维垂直逆投影面的枚举车速检测算法[J]. 电子设计工程, 2016, 24(14):165-167.
