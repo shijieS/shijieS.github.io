@@ -8,7 +8,7 @@ published: true
 ---
 The purpose of this project is to counting the people passing through the bus by RGB-D camera accurately.
 
-This project start from 2015.01 to 2017.05. 
+This project starts from 2015.01 to 2017.05. 
 
 #### designed a software and hardware system
 We have designed a software and hardware system. 
