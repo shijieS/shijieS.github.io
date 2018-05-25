@@ -33,7 +33,6 @@ disqus_shortname: "shijies"
 
 # Build settings
 markdown: kramdown
-# markdown: redcarpet
   
 gems:
   - jekyll-feed
