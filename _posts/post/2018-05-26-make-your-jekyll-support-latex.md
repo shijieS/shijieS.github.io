@@ -23,12 +23,12 @@ I just cannot figure out, where to put these codes, even from the jekyll officia
 
 I can make sure two things:
 - In '_config.xml' file,  I should use kramdown engine
-```
+{% highlight json %}
 markdown: kramdown
-```
+{% endhighlight %}
 
 - The following code should be used
-```
+{% highlight html %}
 <script type="text/x-mathjax-config"> MathJax.Hub.Config({ TeX: { equationNumbers: { autoNumber: "all" } } }); </script>
   <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
@@ -39,12 +39,13 @@ markdown: kramdown
     });
   </script>
   <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
-```
+{% endhighlight %}
 
 Finally, I found this [this link](https://github.com/github/pages-gem/issues/307), went to his/her repostory and get the idear of position to put.
 
 I should put these codes in the all-shared layout file which is '_include/head.html', see this file code as following
-```
+
+{% highlight html %}
 <!DOCTYPE html>
 <html>
   <head>
@@ -103,4 +104,4 @@ I should put these codes in the all-shared layout file which is '_include/head.h
   </script>
   <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
   </head>
-```
+{% endhighlight %}
