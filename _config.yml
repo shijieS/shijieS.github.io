@@ -32,8 +32,8 @@ user_email: "shijieSun[shift+2]chd.edu.cn"
 disqus_shortname: "shijies"
 
 # Build settings
-# markdown: kramdown
-markdown: redcarpet
+markdown: kramdown
+# markdown: redcarpet
   
 gems:
   - jekyll-feed
