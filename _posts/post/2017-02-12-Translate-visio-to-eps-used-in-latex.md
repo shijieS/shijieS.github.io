@@ -5,9 +5,6 @@ date: {}
 categories:
   - Tools
 published: true
-tags:
-  - tools
-comments: '1'
 ---
 
 Translate visio to eps used in latex
