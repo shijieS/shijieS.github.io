@@ -45,3 +45,75 @@ exclude:
 sass:
   style: compressed
 future: true
+
+
+prose:
+  rooturl: '_posts'
+  siteurl: 'https://shijieS.github.io'
+  relativeLinks: 'https://shijieS.github.io'
+  media: 'media'
+  ignore:
+    - index.md
+    - _config.yml
+    - /_layouts
+    - /_includes
+  metadata:
+    _posts:
+      - name: "layout"
+        field:
+          element: "select"
+          label: "Add Layout"
+          placeholder: "Choose Layout"
+          options:
+            - name: "Research"
+              value: "research"
+            - name: "Post"
+              value: "post"
+      - name: "categories"
+        field:
+          element: "multiselect"
+          label: "Add Categories"
+          placeholder: "Choose Categories"
+          options:
+            - name: "Math"
+              value: "math"
+            - name: "Idear"
+              value: "idear"
+            - name: "Tools"
+              value: "tools"
+            - name: "Programming"
+              value: "programming"
+      - name: "tags"
+        field:
+          element: "multiselect"
+          label: "Add Tags"
+          placeholder: "Choose Tags"
+          options:
+            - name: "tracking"
+              value: "tracking"
+            - name: "detection"
+              value: "detection"
+            - name: "deep-learning"
+              value: "deep learning"
+            - name: "tools"
+              value: "tools"
+      - name: "comments"
+        field:
+          element: "select"
+          label: "Need comments"
+          placeholder: "Choose"
+          options:
+            - name: "Yes"
+              value: "1"
+            - name: "No"
+              value: "0"
+    _posts/static:
+      - name: "layout"
+        field:
+          element: "hidden"
+          value: "page"
+      - name: "permalink"
+        field:
+          element: "text"
+          label: "Permalink"
+          value: ""
