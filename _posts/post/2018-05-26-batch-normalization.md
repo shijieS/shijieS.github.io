@@ -1,6 +1,6 @@
 ---
 date: '2018-05-26 02:45 +0800'
-published: false
+published: true
 layout: post
 categories:
   - math
