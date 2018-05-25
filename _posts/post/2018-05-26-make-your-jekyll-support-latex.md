@@ -59,8 +59,7 @@ I should put these codes in the all-shared layout file which is '_include/head.h
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.min.css">
     <link rel="stylesheet" href="//fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="{{site.baseurl}}/assets/css/main.css">
-    
-    
+  	<!-- mathjax code should add here -->
     </script> -->
     <script type="text/x-mathjax-config"> MathJax.Hub.Config({ TeX: { equationNumbers: { autoNumber: "all" } } }); </script>
     <script type="text/x-mathjax-config">
