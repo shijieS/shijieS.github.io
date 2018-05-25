@@ -1,8 +1,9 @@
 ---
 layout: post
-title:  "Translate visio to eps used in latex"
-date:  2017-02-12
+title: Translate visio to eps used in latex
+date: {}
 categories: Tools
+published: true
 ---
 
 Translate visio to eps used in latex
@@ -18,6 +19,7 @@ I have try many software for drawing which can be used in latex, such as TikZ<su
 ### Process<sup>[3](#ref.3)</sup>
 
 #### Open My visio and draw some flow chart
+{{ site.url }}
 - ![]({{ site.url }}/assets/img/20170212-1.jpg)
   
 #### Select your element to printed
@@ -35,11 +37,11 @@ I have try many software for drawing which can be used in latex, such as TikZ<su
 #### insert into latex
 ```
 \begin{figure}[h]
-		\centering
-		\includegraphics[width=0.4\linewidth]{img/1.eps}
-		\caption[short title]{long title}
-		\label{fig:1}
-	\end{figure}
+	\centering
+	\includegraphics[width=0.4\linewidth]{img/1.eps}
+	\caption[short title]{long title}
+	\label{fig:1}
+\end{figure}
 ```
 
 ### Reference
