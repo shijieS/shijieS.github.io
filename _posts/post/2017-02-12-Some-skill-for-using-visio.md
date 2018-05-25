@@ -1,8 +1,13 @@
 ---
+date: 2017-02-13T00:00:00.000Z
 layout: post
-title:  "Some skill for using visio"
-date:  2017-02-13
-categories: Tools
+title: Some skill for using visio
+categories:
+  - Tools
+published: true
+tags:
+  - tools
+comments: '1'
 ---
 
 Some skill for using visio
