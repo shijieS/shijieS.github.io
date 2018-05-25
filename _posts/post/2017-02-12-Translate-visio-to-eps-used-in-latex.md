@@ -1,9 +1,13 @@
 ---
 layout: post
 title: Translate visio to eps used in latex
-date: 2017-02-13
-categories: Tools
+date: {}
+categories:
+  - Tools
 published: true
+tags:
+  - tools
+comments: '1'
 ---
 
 Translate visio to eps used in latex
