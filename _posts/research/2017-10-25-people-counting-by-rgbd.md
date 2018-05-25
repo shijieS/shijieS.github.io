@@ -1,7 +1,7 @@
 ---
 layout: research
 title: People counting by RGB-D camera
-date: '2017-03-25 01:30:13 +0800'
+date: '2015-01-01 01:30:13 +0800'
 categories: research counting
 tags: counting
 published: true
@@ -35,7 +35,7 @@ We have published a dataset, called **P**eople **c**ounting **d**ata**s**et (PCD
 There are total up to 5,464 videos in this dataset. The detail number of people entering and exiting the bus in each category can be referred from the following table.
 
 #### published a paper 
-[pdf](https://www.researchgate.net/publication/324492648_Benchmark_data_and_method_for_real-time_people_counting_in_cluttered_scenes_using_depth_sensors) 
+\[[pdf](https://www.researchgate.net/publication/324492648_Benchmark_data_and_method_for_real-time_people_counting_in_cluttered_scenes_using_depth_sensors) \]
 
 We have written a paper to clarify our algorithm. This paper's name is "Benchmark data and method for real-time people counting in cluttered scenes using depth sensors".
 
