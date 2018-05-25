@@ -1,8 +1,13 @@
 ---
 layout: post
-title:  "R Language Learning"
-date:  2017-02-12
-categories: Language
+title: R Language Learning
+date: 2017-02-12T00:00:00.000Z
+categories:
+  - programming
+published: true
+tags:
+  - tools
+comments: '1'
 ---
 
 R Language Learning
