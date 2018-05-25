@@ -19,9 +19,9 @@ I want to make my jekyll surpport latex math. I tried many ways, such as the fol
 - [How to use LaTex in Markdown](http://flennerhag.com/2017-01-14-latex/)
 - [Math block](https://kramdown.gettalong.org/syntax.html#math-blocks)
 
-I just cannot figure out, where to put these codes, even from the jekyll official way [Math support](https://jekyllrb.com/docs/extras/#math-support). Besides I also has a little worried about the outdated way.
+I just cannot figure out, where to put these codes, even from the jekyll official way [Math support](https://jekyllrb.com/docs/extras/#math-support). Besides I am also little worried about the outdated way.
 
-I can make sure two things:
+two things are sure:
 - In '_config.xml' file,  I should use kramdown engine
 {% highlight json %}
 markdown: kramdown
