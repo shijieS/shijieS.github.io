@@ -42,7 +42,7 @@ js: ["post.js"]
     
     ====
     pageid: "{{page.id}}"
-    pageurl: "{{page.url}}"
+    pageurl: "{{site.baseurl}}{{page.url}}"
   </div>
 </div>
 {% if site.disqus_shortname and page.comments %}
@@ -50,7 +50,7 @@ js: ["post.js"]
 <script>
   var disqus_config = function () {
     this.page.url = "{{page.url}}";
-    this.page.identifier = "{{page.id}}";
+    this.page.identifier = "{{site.baseurl}}{{page.id}}";
   };
   (function() { // DON'T EDIT BELOW THIS LINE
     var d = document, s = d.createElement('script');
