@@ -49,8 +49,8 @@ future: true
 
 prose:
   rooturl: '_posts'
-  siteurl: 'http://shijieS.github.io'
-  relativeLinks: 'http://shijieS.github.io'
+  siteurl: 'https://shijieS.github.io'
+  relativeLinks: 'https://shijieS.github.io'
   media: 'media'
   ignore:
     - index.md
