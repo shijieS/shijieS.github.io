@@ -97,6 +97,16 @@ prose:
               value: "deep learning"
             - name: "tools"
               value: "tools"
+      - name: "comments"
+        field:
+          element: "select"
+          label: "Need comments"
+          placeholder: "Choose"
+          options:
+            - name: "Yes"
+              value: "1"
+            - name: "No"
+              value: "0"
     _posts/static:
       - name: "layout"
         field:
