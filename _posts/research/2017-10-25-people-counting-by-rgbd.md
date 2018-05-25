@@ -28,9 +28,9 @@ We have published a dataset, called **P**eople **c**ounting **d**ata**s**et (PCD
 |:--------:|:------:|:------:|:----:|:----:|
 | sunlight | strong | strong | weak | weak |
 | crowed   |   yes  |   no   |  yes |  no  |
-| entering |  937 |  616 |  5427 | 2704 |
-| exiting  | 1149 |  668 |  6647 | 2760 |
-| total    | 2086 | 1284 | 12074 | 5464 |
+| entering |  937 	|  616 	 |  5427 | 2704 |
+| exiting  | 1149 	|  668 	 |  6647 | 2760 |
+| total    | 2086 	| 1284 	 | 12074 | 5464 |
 
 There are total up to 5,464 videos in this dataset. The detail number of people entering and exiting the bus in each category can be referred from the following table.
 
