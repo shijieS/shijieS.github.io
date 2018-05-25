@@ -4,11 +4,8 @@ published: false
 layout: post
 categories:
   - math
-tags:
-  - deep learning
 comments: '1'
+tags:
+  - detection
 ---
 ### What's batch normalization
-
-
-
