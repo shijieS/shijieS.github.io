@@ -17,7 +17,9 @@ This project starts from 2015.01 to 2017.05.
 We have designed a software and hardware system. 
 
 The software system includes: calibration, one-camera counting, double camera counting, recording, auto testing. The hardware system. 
-![people counting by single camera]({{site.baseurl}}/media/people-counting-single-camera.png)
+![people-counting-single-camera.png]({{site.baseurl}}/media/people-counting-single-camera.png)
+![people-counting-double-camera.png]({{site.baseurl}}/media/people-counting-double-camera.png)
+![3d-cloud-fast-rebuild.png]({{site.baseurl}}/media/3d-cloud-fast-rebuild.png)
 
 
 
