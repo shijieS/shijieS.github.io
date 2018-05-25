@@ -33,6 +33,8 @@ disqus_shortname: "shijies"
 
 # Build settings
 markdown: kramdown
+  math_engine: mathjax
+  
 gems:
   - jekyll-feed
   - jekyll-paginate
