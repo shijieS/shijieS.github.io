@@ -28,7 +28,7 @@ Home -> Editing -> Layers / Layer Property
 Layer in visio is aimed at controling separated, and the key is lock and active the layer.
 If you use layer, you can draw the following grap
 
-![]({{ site.url }}/assets/img/20170213-1.jpg)
+![]({{site.baseurl}}/media/20170213-1.jpg)
 
 ### Draw Lines and Other Shapes
 - Rectangle: Home -> Tools -> Rectangle!
@@ -37,7 +37,7 @@ If you use layer, you can draw the following grap
 
 The Same as "Deveop Tools" in visio, and in the "Develop Tools", there are some shape operation, for example:
 
-![]({{ site.url }}/assets/img/20170213-2.jpg)
+![]({{site.baseurl}}/media/20170213-2.jpg)
 
 ### Custome Stencil
 - In the Shapes window, click More Shapees, and then click New Stencil. 
@@ -48,16 +48,16 @@ The Same as "Deveop Tools" in visio, and in the "Develop Tools", there are some 
 ### The accurate control
 In order to control your shape accurately, you can open the Size&Position window, which is in View -> Show -> Task Window -> Size&Position 
 
-![]({{ site.url }}/assets/img/20170213-3.jpg)
+![]({{site.baseurl}}/media/20170213-3.jpg)
 
 You can adjust every item listed in the window.
 
-![]({{ site.url }}/assets/img/20170213-4.jpg)
+![]({{site.baseurl}}/media/20170213-4.jpg)
 
 ### Set Line jumps for connectors
 You can set the line jumps for connnector (It is important setting when I draw 3D coordinate).
 
-![]({{ site.url }}/assets/img/20170213-5.jpg)
+![]({{site.baseurl}}/media/20170213-5.jpg)
 
 
 ### Add connection point for a shape
@@ -65,7 +65,7 @@ If you want to connect to a shape in the different part in which there are no co
 
 Home -> Tools -> Connection Point
 
-![]({{ site.url }}/assets/img/20170213-6.jpg)
+![]({{site.baseurl}}/media/20170213-6.jpg)
 
 > Remeber to press CTRL when you add the connection point
 > You can use the connection point to control the text position
