@@ -5,6 +5,7 @@ date: '2015-01-01 01:30:13 +0800'
 categories: research counting
 tags: counting
 published: true
+comments: 1
 ---
 The purpose of this project is to counting the people passing through the bus by RGB-D camera accurately.
 
