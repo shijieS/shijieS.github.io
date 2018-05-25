@@ -39,6 +39,7 @@ js: ["post.js"]
 <div class="row">
   <div class="col s12">
     {{ content }}
+    url: "{{site.url}}{{site.baseurl}}{{page.id}}"
   </div>
 </div>
 {% if site.disqus_shortname and page.comments %}
