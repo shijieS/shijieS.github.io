@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Translate visio to eps used in latex
-date: {}
+date: 2017-02-13
 categories: Tools
 published: true
 ---
