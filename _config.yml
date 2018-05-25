@@ -39,7 +39,6 @@ gems:
   - jekyll-paginate
   - jekyll-seo-tag
   - jekyll-sitemap
-  - kramdown
 exclude:
   - Gemfile
   - Gemfile.lock
