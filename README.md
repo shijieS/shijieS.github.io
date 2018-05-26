@@ -10,6 +10,34 @@ A responsive [Material](https://material.io/) theme based on [Materialize.css](h
 * [Tags](https://shawnteoh.github.io/matjek/tags/) and [Categories](https://shawnteoh.github.io/matjek/categories/)
 * Modular CSS and JS includes ([example](https://github.com/ShawnTeoh/matjek/blob/gh-pages/projects.md/))
 * [Fancy "About" page](https://shawnteoh.github.io/matjek/about)
+* support mathjax
+* support image
+
+## Usage
+### mathjax
+you can use "$$" to use it, such as:
+$$ a^2 = 1 $$
+see mathjax official usage to get the detail.
+
+### image
+```yaml
+<? include image.html url="" file="" alt="" class="" caption="" max-width=30?>
+```
+where
+
+|----   |---- |
+|label  |mean |
+|url    | image url|
+|file   | image name, the image is located at "media" folder|
+|alt    | alt|
+|class  | image class, which can be "docimg", "circle", "round", etc.|
+|caption| image caption|
+|max-width| the max width of image|
+
+Inline image
+```yaml
+<? include inline.html file="" alt="" ?>
+```
 
 ## Installation
 
