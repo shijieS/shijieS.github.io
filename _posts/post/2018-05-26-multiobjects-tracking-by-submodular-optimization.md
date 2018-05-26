@@ -14,5 +14,5 @@ This method is detection based method for the MOT. The interesting idear of the 
 
 
 #### The process of the method.
-{% include {{site.url}}{{page.url}} file="{{site.baseurl}}/media/20180526223354.png" alt="flowchart of proposed method" caption="flowchart of proposed method" %}
+{% include image.html file="{{site.baseurl}}/media/20180526223354.png" alt="flowchart of proposed method" caption="flowchart of proposed method" %}
 
