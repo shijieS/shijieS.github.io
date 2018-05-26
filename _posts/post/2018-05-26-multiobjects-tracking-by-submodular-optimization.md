@@ -15,4 +15,19 @@ This method is detection based method for the MOT. The interesting idear of the 
 
 #### The process of the method.
 
-{% include image.html url="" file="20180526223354.png" alt = "" caption="flowchart of the proposed method" class="w3-round" %}
+{% include image.html file="20180526223354.png" alt = "" caption="flowchart of the proposed method" class="round" %}
+
+The proposed method follows 3 steps:
+
+1. gernerate the low-lever trajectories by two methods (overlap criteria strategy associates and network flow strategy). The first strategy focus on the spatial constraints between two adjacent frames. The second strategy considering the appearance similarity.
+
+2. use the designed submodular function to connect low-level trajectories.
+
+3. occlusion handling for short-term occlusion
+
+#### Detail
+
+#### Result
+Experiment is processed on mot2015. Its rank at 33rd. The detail is shown as follows,
+
+{% include image.html file="20180527020956.png" alt = "" caption="result on mot chanllenge 15" class="round" %}
