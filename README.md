@@ -16,28 +16,29 @@ A responsive [Material](https://material.io/) theme based on [Materialize.css](h
 ## Usage
 ### mathjax
 you can use "$$" to use it, such as:
+
+```mathjax
 $$ a^2 = 1 $$
+```
+
 see mathjax official usage to get the detail.
 
 ### image
+
 ```yaml
 <? include image.html url="" file="" alt="" class="" caption="" max-width=30?>
 ```
 where
 
+|       |     |
 |----   |---- |
 |label  |mean |
 |url    | image url|
 |file   | image name, the image is located at "media" folder|
 |alt    | alt|
-|class  | image class, which can be "docimg", "circle", "round", etc.|
+|class  | image class, which can be "docimg", "circle", "round", "inline" etc.|
 |caption| image caption|
 |max-width| the max width of image|
-
-Inline image
-```yaml
-<? include inline.html file="" alt="" ?>
-```
 
 ## Installation
 
