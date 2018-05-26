@@ -15,4 +15,4 @@ This method is detection based method for the MOT. The interesting idear of the 
 
 #### The process of the method.
 ![Flow chart of the proposed method.]({{site.baseurl}}/media/20180526223354.png)
-{{site.baseurl}}{{ page.url }}
+{{site.url}}{{ page.url }}
