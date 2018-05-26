@@ -1,6 +1,12 @@
 ---
 date: '2018-05-26 22:38 +0800'
 published: false
+layout: post
+categories:
+  - idear
+tags:
+  - tracking
+comments: '1'
 ---
 The paper is available [here](https://www.dropbox.com/s/h9l7f3d16g2f2ko/08303708.pdf?dl=0)
 
