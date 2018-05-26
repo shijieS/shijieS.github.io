@@ -15,4 +15,4 @@ This method is detection based method for the MOT. The interesting idear of the 
 
 #### The process of the method.
 
-{%include image.html url="" file="{{site.baseurl}}/media/20180526223354.png" alt="" caption="" %}
+{%include image.html %}
