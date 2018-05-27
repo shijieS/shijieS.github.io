@@ -26,11 +26,16 @@ The proposed method follows 3 steps:
 3. occlusion handling for short-term occlusion
 
 #### Detail
-#### 1. Finding low-level tracklets
-1. divide the video by 10 frames
-2. use "overlap criteria method" to connect the detected boxes (this method is very simple, just connect the detected box if $$iou > 0.6$$).
-
+1). divide the video by 10 frames
+2). use "overlap criteria method" to connect the detected boxes (this method is very simple, just connect the detected box if $$iou > 0.6$$).
+3). 
 divide the video by 10 frames
+
+
+Its algorithm is listed as follows,
+{% include image.html file="20180527211803.png" alt = "" caption="tracking algorithm" class="round" %}
+
+
 
 #### Result
 Experiment is processed on mot2015. Its rank at 33rd. The detail is shown as follows,
