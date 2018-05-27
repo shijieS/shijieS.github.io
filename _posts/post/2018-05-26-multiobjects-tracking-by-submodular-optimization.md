@@ -28,9 +28,19 @@ The proposed method follows 3 steps:
 #### Detail
 1). divide the video by 10 frames
 2). use "overlap criteria method" to connect the detected boxes (this method is very simple, just connect the detected box if $$iou > 0.6$$).
-3). 
-divide the video by 10 frames
+3). make "network flow" as interlinear program (ILP) and solved it by IBM CPLEX Optimizer.
+4). use histogram to calculate the appearance similarity and $$y$$ of the node in tracklite to get the forward motion error and backforward motion error. Then use submodular optimization to connect low-level tracklets. 
+5). use the same similarity to connect the connect trajectory, by the following condition
 
+$$
+\left\{\begin{matrix}
+Similarity(T_{trajectory}^i, T_{trajectory}^j) \geq \tau \\ 
+Frame_i \cap Frame_j = \emtpyset \\ 
+minFrame_i - maxFrame_j \leq \tau_f, if i \leq j\\ 
+minFrame_j - maxFrame_i \leq \tau_f, if i > j
+
+\end{matrix}\right.
+$$
 
 Its algorithm is listed as follows,
 {% include image.html file="20180527211803.png" alt = "" caption="tracking algorithm" class="round" %}
