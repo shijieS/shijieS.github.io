@@ -43,5 +43,5 @@ $$
 $$
 where $$x_1$$ and $$x_2$$ are the decision variable, in this case, the rate at which they should run Unit1 and Unit 2 respectively. Find the optimal combination of $$x_1$$ and $$x_2$$ that minimizes the cost.
 
-{? include image.html file="20180528120320.png" caption="3D graph of cost function" class="round" ?}
+{% include image.html file="20180528120320.png" caption="3D graph of cost function" class="round" %}
 
