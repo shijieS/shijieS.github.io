@@ -24,7 +24,7 @@ A_{ieq} x \neq b_{ieq} \\
 Ax \seq b
 \end{matrix}
 $$
-where $$x=\left[x_1 \\ x_2 \right]$$, $$H=\left[h_{11} & h_{12} \\ h_{21} & h_{22}\right]$$, $$f=\left[f_1 \\ f_2 \right]$$, $$A_{eq} \in \mathbb{R}^{n_{eq}\times n}$$, $$b_{eq}\in \mathbb{R}^{n_{eq}\times 1}$$, $$A \in \mathbb{R}$$.
+where $$f=\left[f_1 \\ f_2 \right]$$, $$A_{eq} \in \mathbb{R}^{n_{eq}\times n}$$, $$b_{eq}\in \mathbb{R}^{n_{eq}\times 1}$$, $$A \in \mathbb{R}$$, $$b\in \mathbb{R}^{n_{ieq}\times 1}$$, $$A \in \mathbb{R}^{n_{ieq}\times n}$$. $$n$$ is the number of decision variable, $$n_{eq}$$ is the number of equality constraints, $$n_{ieq}$$ is the nubmer of inequality constrains.
 
 Lots of function :(. It's simple to understand. We just remember two keys: 1) the objective function is quaratic, 2) the constraints of objective function is linear.
 
