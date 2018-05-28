@@ -18,13 +18,15 @@ The QP has a quaratic objective function and linear constraints. Its solver in m
 $$
 \begin{matrix}
 \mathop{min}_\limits x \frac{1}{2} x^T H x + f^T x & s.t.\\
-LB \seq x \seq UB & \\
+LB \leq x \leq UB & \\
 A_{eq} x = b_{eq} & \\
 A_{ieq} x \neq b_{ieq} \\
 Ax \seq b
 \end{matrix}
 $$
-where $$f=\left[f_1 \\ f_2 \right]$$, $$A_{eq} \in \mathbb{R}^{n_{eq}\times n}$$, $$b_{eq}\in \mathbb{R}^{n_{eq}\times 1}$$, $$A \in \mathbb{R}$$, $$b\in \mathbb{R}^{n_{ieq}\times 1}$$, $$A \in \mathbb{R}^{n_{ieq}\times n}$$. $$n$$ is the number of decision variable, $$n_{eq}$$ is the number of equality constraints, $$n_{ieq}$$ is the nubmer of inequality constrains.
+where $$f=\left[f_1 \\ f_2 \right], A_{eq} \in \mathbb{R}^{n_{eq}\times n}, b_{eq}\in \mathbb{R}^{n_{eq}\times 1}, A \in \mathbb{R}, b\in \mathbb{R}^{n_{ieq}\times 1}, A \in \mathbb{R}^{n_{ieq}\times n}$$. 
+
+$$n$$ is the number of decision variable, $$n_{eq}$$ is the number of equality constraints, $$n_{ieq}$$ is the nubmer of inequality constrains.
 
 Lots of function :(. It's simple to understand. We just remember two keys: 1) the objective function is quaratic, 2) the constraints of objective function is linear.
 
