@@ -31,7 +31,7 @@ $$n$$ is the number of decision variable, $$n_{eq}$$ is the number of equality c
 In wiki, the formulation is as follows,
 
 $$
-\left[ \begin{array} { c c } { Q } & { E ^ { T } } \\ { E } & { 0} \end{array} \right] \left[ \begin{array} { l } { x } \\ { \lambda } \end{array} \right] = \left[ \begin{array} { c } { - c } \\ { d } \end{array} \right]
+\left.\begin{array} { ll } { \mathop{Minimize} & \frac { 1} { 2}  x  ^ { T } Q  x  + c ^ { T } x } \\ \mathop{subject to} & { A  x  \leq  b  \\ & E x = d} \end{array} \right.
 $$
 
 
