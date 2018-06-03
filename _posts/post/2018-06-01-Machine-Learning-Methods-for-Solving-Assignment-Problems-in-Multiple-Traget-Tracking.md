@@ -124,8 +124,8 @@ There are multiple ways to incorporte learned pairwise cost into a MDAP solver. 
 $$
 c_{ij} \begin{matrix}
 =& -log P(\Lambda_i, \Lambda_j) \\
-=& -log(P_K(\Lmabda_i, \Lambda_j) P_{NK}(\Lambda_i, \Lambda_j)\\
-=& -log P_K(\Lmabda_i, \Lambda_j) - P_{NK}(\Lmabda_i, \Lambda_j)
+=& -log(P_K(\Lambda_i, \Lambda_j) P_{NK}(\Lambda_i, \Lambda_j)\\
+=& -log P_K(\Lambda_i, \Lambda_j) - P_{NK}(\Lambda_i, \Lambda_j)
 \end{matrix}
 $$
 
