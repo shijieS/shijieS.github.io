@@ -1,6 +1,12 @@
 ---
 date: '2018-06-01 10:02 +0800'
-published: false
+published: true
+comments: '1'
+tags:
+  - tracking
+categories:
+  - idear
+layout: post
 ---
 Data association and track-to-track association, two fundamental problems in single-sensor and multi-sensor multi-target tracking, are instances of an NP-hard combination optimization problem known as the multidimensional assignment problem (MDAP). 
 
@@ -124,3 +130,13 @@ c_{ij} \begin{matrix}
 $$
 
 Usually, $$P_{NK}(\Lambda_i, \Lambda_j)$$ is parameterized by weights $$\theta$$ and is a function of the features exracted from the sensor data and $$\theta$$. For example, this prbability could be represented as a neural network that outputs a similarity score between 0 and 1. 
+
+#### Optimization
+In this section, we wil review recent work on a variety of optimization algorithms for solving MDAPs in real-time multi-target tracking systems. Our focus will be on approaches with a machine learning flavour, e.g., approximate inference techniques and deep neural networks, as well as the probabilistic modeling aspects of the problem. We will start by briefly convering non-probabilistic methods that are useful for constracting with whtat is currently popular. The techniques discussed in this section are quite general, and in most cases can be used for both the data association and track-to-track association problems with proper modification. It is important to notice that certain modeling assumptions, such as how the assignment cost function is defined, can case a tracker to make error regardless of how strong the optimization approach is.
+
+##### Greedy Randomized Search
+Heuristically searching through the space of valid solutions within a time limit is an attractive way of ensuring both real-time performance and that a good local optima will be discovered. The most weill-known method, the greedy Randomized Adaptive Search Procedure (GRASP), was originally introduced for multi-sensor multi-target tracking. The idea behind GRASP is to randomly select each partial assignment from lists of greedily chosen candidates to form a solution $$\gamma$$. Then a local random search is conducted to attempt to improve this solution. This procedure is repeated until the alloted time runs out or a maximum number of iterations is reached, at which point the best solution that was dicovered is returned. GRASP algorithm also use gating techniques to help reduce the search space, and conduct the local searches by permuting a small number entries within some of the assgnments. 
+
+Other greedy search algorithms have been proposed, based on the semi-greedy track selection (SGTS) algorithm introduced. SGTS-based algorithms first perform the usual greedy assignment algorithm step of sorting potential tracks by track score. Then, they gernate a list of candidate hypotheses and return the local optimal result. This processis repeated iteratively in a manner so that candidate hypotheses are generated that best represent the solution space. The construction of SGTS and its extensions are such that they can provide a solution that is within a guarantted factor of the optimal solution.
+
+The main strength of search algorithm appear to be their simi;icity and the extent to which they are embarrassingly parallel. Despite being quite genral, the advent of more sophisiticated techquies that can leverage problem-specific information and the necessary hardware necessary to run them in real-time has most likely contributed to the lack of continued research on GRASP algorithms in the accademic tracking community.
