@@ -33,7 +33,7 @@ We will first formally introduce the linear assignment problem (LAP) for single-
 Consider a scenario where there are $$m$$ existing tracks and $$n$$ new sensor measurements at time $$k, k=1,cdots, T$$. We assume that there is a matrix $$C_k \in \mathbb{R}^{m\times n}$$, withine entries $$c_k^{ij} \in C$$ representing the cost of assigning measurement $$j$$ to track $$i$$ at time $$k$$. The goal is to find the optimal assignment of measurements to tracks so that the total assignment coast is minimized. Using binary decision variable $$x^{ij} \in \{0, 1\}$$ to represent an assignment of a measurement to a track, we end up with a 0-1 interger program.
 
 $$
-min\limits{x\in X} \sum\limits_{i=1}^m \sum\limits_{j=1}^n {c_k^{ij}x^{ij}}
+min\limits_{x\in X} \sum\limits_{i=1}^m \sum\limits_{j=1}^n {c_k^{ij}x^{ij}}
 $$
 
 with constraints
