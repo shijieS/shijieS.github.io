@@ -164,5 +164,15 @@ $$
 
 where the product over tracks in the objctive reflects an assumption of track motion independence, and the potentially prohibitive constraint guarantees that no two tracks ever intersect. It is possible to derive the measurement likelihood using Equation 9; it's factored as $$P(Z^T|\gamma)=\prod$_z P(\{z\in Z^T\}|\gamma)$$, where each term in this product is a Bernoulli distribution with parameter $$\beta$$ encoding the probability of false alarm and missed detection. The track probabilities $$P(\mathcal{T}_m)$$ are modeled as Markov chains to capture track initialization, termination, and state transition probabilities. A network flow graph can now be defined as a graph with source $$s$$ and sink $$t$$ as follow. For every measurement $$z_k^i \in Z^T$$, create two nodes $$u_r, v_r$$, create an arc $$(u_r, v_r)$$ with cost $$c(u_r, v_r)$$ and flow $$f(u_r, v_r)$$, an arc $$(s, u_r)$$ and flow $$f(s, u_r)$$, and an arc $$(v_r, t)$$ with cost $$c(v_r, t)$$ and flow $$f(v_r, t)$$. For every transition $$P(z_{k+1}^i | z_k^i)\neq 0$$, create an arc $$(v_r, u_s) with cost $$ c(u_r, u_s) $$ and flow $$f(v_r, u_s)$$. An example of such a graph is given in Figure 4. The flows $$f$$ are indicator functions defined by defined by 
 
+$$
+f(s, u_r) = \left\{ \begin{matrix}
+1 & if \exists\mathcal{T}_m \in \mathcal{T} \text{, $$\mathcal{T}_m$$ starts from $$u_r$$}\\
+0 & otherwise
+\end{matrix}
+
+f(v_r, t) = \left\{ \begin{matrix}
+1 & if \exists\mathcal{T}_m \in \mathcal{T} & 
+\end{matrix}
+$$
 
 where $$\mathcal{T}_m$$ starts from  $$u_r$$
