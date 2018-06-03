@@ -39,7 +39,7 @@ $$
 with constraints
 
 $$
-\left{ \begin{matrix}
+\left\{ \begin{matrix}
 \sum\limits_{i=1}^{m} x^{ij} =1, j = 1, \cdots, n \\
 \sum\limits_{j=1}^n x^{ij} = 1, i = 1, \cdots, m
 \end{matrix}\right.
