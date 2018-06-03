@@ -171,8 +171,15 @@ f(s, u_r) = \left\{ \begin{matrix}
 \end{matrix}
 
 f(v_r, t) = \left\{ \begin{matrix}
-1 & if \exists\mathcal{T}_m \in \mathcal{T} & 
+1 & if \exists\mathcal{T}_m \in \mathcal{T} \text{, $$\mathcal{T}_m$$ ends at $$v_r$$} \\
+0 & otherwise
 \end{matrix}
+
+f(u_r, v_r) = \left\{\begin{matrix}
+1 & if \exists\mathcal{T}_m \in \mathcal{T} \text{, $$z_k^i \in \mathcal{T}_m} \\
+0 & otherwise
+\end{matrix}
+
 $$
 
 where $$\mathcal{T}_m$$ starts from  $$u_r$$
