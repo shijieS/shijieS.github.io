@@ -122,10 +122,10 @@ Due to the high-dimensonality of the raw measurements, almost all such methods a
 There are multiple ways to incorporte learned pairwise cost into a MDAP solver. One common approach is as follows. The probability of association for a pair of measurements or tracks $$\Lambda_i$$ and $$\Lambda_j$$ can be written as a joint pdf; assuming independece of the kinematic ($$K$$) and non-kenematic ($$NK$$) components of tis probabilistic cost function, the resulting negative log-likelihood pariwise cost is:
 
 $$
-c_{ij} \begin{matrix}
-=& -log P(\Lambda_i, \Lambda_j) \\
-=& -log(P_K(\Lambda_i, \Lambda_j) P_{NK}(\Lambda_i, \Lambda_j)\\
-=& -log P_K(\Lambda_i, \Lambda_j) - P_{NK}(\Lambda_i, \Lambda_j)
+\begin{matrix}
+c_{ij}&=& -log P(\Lambda_i, \Lambda_j) \\
+&=& -log(P_K(\Lambda_i, \Lambda_j) P_{NK}(\Lambda_i, \Lambda_j)\\
+&=& -log P_K(\Lambda_i, \Lambda_j) - P_{NK}(\Lambda_i, \Lambda_j)
 \end{matrix}
 $$
 
