@@ -74,3 +74,29 @@ It is common to solve for an approximate solution within a fixed-sized sliding w
 The other form of the MDAP we are interested in is multi-sensor association with $$S\geq 3$$ sensors. This scenario is common in centralizd tracking systems, where sensors that are distributed around a surveillance region report raw measurements to a central node. When each sensor sends its local tracks to a central node for track association and fusion. a MDAP must be solved. In this case, the dimensionality of the MDAP is equal to $$S$$, and hence, is NP-hard. The main difference between this problem and the previous data association problem is that it deals solely with tracks, as opposed to new sensor measurements from all sensors. Multi-scan track-to-track association with two sensors is also a MDAP, as wel as multi-scan multi-sensor data association, but we omit these cases for brevity in our formulation and for the fact that they canbe defined quite similarly from what is presented next.
 
 In this scenario there are $$s\geq 3$$ sensors, each maintaining a set of local tracks and using a sliding window of size $$T \geq 1 $$. We define $$X_k^s = \{x_k^s\}, s=1,\cdots, S$$, to represent the set of track state estimates produced by sensor $$s$$ at time $$k$$. We have $$i=1, \cdots, N_s$$, where $$N_s$$ is the number of tracks being maintained by sensor $$s$$ and $$x_k^{i,s}$$ interpreted as the $$i^{th}$$ track of sensor $$s$$ at scan $$k$$. Then for each sebsirm we have $$x^{T,s}={X_1^s, \cdots, X_T^s$$, which represents the collection of track state estimates within the sliding window. We seek an optimal partitioning $$\gamma^*\in \Gamma $$ of $$X^T = \{X^{T,1}, \cdots, X^{T,S} \} $$ of tracks over all scans and sensors that minimizes the total assignment cost, and we can define a partial assignment hypothesis in a partition $$\gamma$$ as $$\gamma^l = \{\{x_1^{j,1}, x_1^{j,2}, \cdots, x_1^{j,N_s}, \cdots, \{x_T^{j,1}, x_T^{j,2}, \cdots, x_T^{j, N_s}\}\}$$. In other words, this states that the $$j^{th}$$ track of sensor 1 from scan 1, $$j^{th}$$ track of sensor 2 from scan 1, and so on.
+
+#### Assignment costs
+The assignment cost function has a massive impact on tracking performance. In this subsection, we will introduce various perspectives towards defining assignment costs, specifically highlighting probabilistic appraoches.
+
+##### Kinematric Costs
+In situations where sensor measurements only consist of noisy esitmates of kinematic data from targets (e.g., position and speed), a prbabilistic framework can be used to recover the unobservable state of the targets. The most common approach is to handle the uncertainty in the sensro measurements and target kinematics with a stochastic Bayesian recursive filter; The Kalman Filter-probably the most popular filter of this falvor-provides the means of updating a posterior distribution over the target state given by corresponding measurement likelihood, i.e., $$P(x_k|z_k) \propto P(z_k | z_{k-1})$$. We are using the same notation as befor, such taht $$ x_k $$ repressents the target state at time $$k$$ and $$z_k$$ is the measurement at time $$k$$. One of the reasons for the popularity of the Kalman Filter is that by assuming that all distributions of interest are Gaussian, the posterior update can be computed in closed form. Now recall that a partial association hypothesis $$gamma^j$$ for the multi-scan single-sensor data association problem assigns $$T$$ measurements to a single track within the sliding window of length $$T$$. The canonical cost function for data association is to minimize the following negative log-likelihood ratio:
+
+$$
+\begin{matrix}
+c_{i_1, i_2, \cdots, i_T} = -log \frac{P(\gamma^j|z_1^i, z_2^i, \cdots, z_T^i)}{\gamma^0|z_1^i, z_2^i, \cdots, z_T^i} &, (\gamma^j, \gamma^0)\in \gamma.
+\end{matrix}
+$$
+
+The partial hypothesis $$\gamma^j$$ represents the $$j^{th}$$ track of the hypothesis $$\gamma$$, and $$\gamma^0$$ represents a dummy track where all measurements attributed to it are considered false alarms. Assuming the sensor has a probability of 1 of detecting each target and a uniform prior over all assignment hypotheses, the likelihood that the $$j^{th}$$ track generated the assigned measurements is 
+
+$$
+P(\gamma^j|z_1^i, z_2^i, \cdots, z_T^i) \in P(z_1^i, z_2^i, \cdots, z_T^i | \gamma^j).
+$$
+
+Assuming independence of the measurements and trck states between time steps, we can decompose the likelihood that the measurements orginated from track $$\gamma^j$$ as 
+
+$$
+P(z_1^i, z_2^i, \cdots, z_T^i | \gamma^j) = \prod\limits_{k=1}^T P(z_k^i|x_k)P(x_k|j)
+$$
+
+In the Kalman Filter and its extensions, the right-hand side has an attractive closed form representation as a Mahalanobis distance between the measurement prediction and the observed masurements, scaled in each dimension of the measurement space by the state and measurement convairance. This can easily be derived by tracking and plugging it into the negative log-likelihood ratio.
