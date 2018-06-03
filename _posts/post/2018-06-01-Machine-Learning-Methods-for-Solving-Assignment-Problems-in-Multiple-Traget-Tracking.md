@@ -59,7 +59,7 @@ Let the set of nosiy measurement at time $$k$$ be referred to as scan $$k$$ and 
 Let $$\mathbb{T}$$ be the set of all possible partitions of the set $$Z^T$$. We seek an optimal prtitioning $$\gamma^* \in \mathbb{T}$$, also called a hypothesis, of $$Z^T$$ into tracks. Note that a track is just an ordered set of measuremtns $$\{z_1^i, z_2^i, \cdots, z_T^i\}$$; one measurement from each scan at each time step is attributed to each track. Hence, a partition $$\gamma$$ represents a valid collection of tracks that adhere to the MDAP constraints. Now, we define $$\gamma^j$$ to be the $$j^{th}$$ track in $$\gamma$$. Following this, we can define a cost for each track $$\gamma^j$$ in a partition as $$c_{i_1, i_2, \cdots, i_T}$$, where the indices $$i_1, i_2, \cdots, i_T$$ indicate which measurements from each scan belong to this pariticular track. This represents the cost of track j being assigned measurement $$i$$ from scan 1, measurement $$i$$ from scan 2, and so on. Curcially, the multidimensional constraints prevent measurements from being assigned to two differenet tracks and ensure that each measurement is matched to a track. If we use binary variables $$\rho_{i_1, i_2, \cdots, i_T \in \{0, 1\}}$$ to indicate if a track is present in a partition, then we can represent the MDAP objective as
 
 $$
-min\limits {\gamma\in \Gamma} \sum\limits_{i_1=1}^{M_1}\cdots \sum\limits_{i_T=1}^{M_T}c_{i_1, i_2, \cdots, i_T}\rho_{i_1, i_2, \cdots, i_T}
+\mathop{min}\limits_{\gamma\in \Gamma} \sum\limits_{i_1=1}^{M_1}\cdots \sum\limits_{i_T=1}^{M_T}c_{i_1, i_2, \cdots, i_T}\rho_{i_1, i_2, \cdots, i_T}
 $$
 
 with constraints
