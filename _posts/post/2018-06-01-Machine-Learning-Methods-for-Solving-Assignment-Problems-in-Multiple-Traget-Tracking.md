@@ -180,6 +180,37 @@ f(u_r, v_r) = \left\{\begin{matrix}
 0 & otherwise
 \end{matrix}
 
+f(v_r, u_s) = \left\{\begin{matrix}
+1 & if \exits\mathcal{T}_m \in \mathcal{T} \text{, $$z_{k+1}^i comes after $$z_k^i \in \mathcal{T}_m$$} \\
+0 & otherwise
+\end{matrix}
 $$
 
-where $$\mathcal{T}_m$$ starts from  $$u_r$$
+and the costs are defined as 
+
+$$
+\begin{matrix}
+c(s, u_r) = -\mathop{log} P_{start}(z_k^i) & c(v_r, t) = -\mathop{log}P_{end}(z_k^i) \\
+c(u_r, v_r) = \mathop{log} \frac{\belta_r}{1-\belta_r} & c(v_r, u_s) = -\mathop{log}_{link}(z_{k+1}^i | z_k^i)
+\end{matrix}
+$$
+
+and can be derived by taking the logarithm of Equation 12; The minimum cost flow through the network corresponds to the assignment $$\gamma^*$$ with the maximum log-liklihood.
+
+Quite a few variation on this model have been proposed in the literature. 
+
+#### Conditional Random Fields
+Probabilistic graphical models provide us with a powerful set of tools for modeling spatio-temporal relationships amongst sensor meaurements in data association and amongst tracks in track-to-track association. Indeed, conditional random fields (cRFs), a class of Markov random fileds, have been used extensively for solving MDAPs in visual tracking. A CRF is an undirected graphical model, often used for structured prediction tasks, that can represent a conditional probability distribution between sets of random variables. CRFs are well-known for their ability to expoloit grid-like structure in the underlying graphical model. We define a CRF over a graph $$G=(V,E)$$ with nodes $$x_{v\in V} \in X$$ such that each node emits a label $$y\in Y$$. For simplicity of notation, we refer to nodes as $$x$$ and omit the subscript. The labels take on values from a discrete set, e.g., $$\{0, 1\}$$; in the context of multi-target tracking, a realization of labels $$y$$ usually corresponds to an assignment hypothesis. A key theorem concerning random field state that the probability distribution being modeled can be written in terms of the cliques $$c$$ of the graph. For example in chain-structured graphs, each pair of nodes and corresponding edge is a clique.
+
+CRFs, like the network flow models discussed in the previous subsection, are essentially a tool for modeling probabilistic relationships between a collection of random variable, and hence still require a separte optimization process for handling training and inference (such as the graph cut algorithm or message passing algorithm). We will focus on presenting how the data association problem is mapped onto a CRF and direct the reder to other sources such as for details on how to do approximate inference for these models. One of the benefits of using graphical models is that we have the flexibility to construct our graph using either sensor measurements, tracklets, or full tracks. Tracklets are a common choice for CRFs since they give an attractive heirarchical quality to the tracking solution; low-level mearuement are first associated into tracklets via, e.g., the Hungarian algorithm, and then stitched together into full tracks via a CRF. By working at higher level of abstraction, the original MDAP constraints 4 and 6 are reformulated; all that is needed tat the higher level is to ensure that each tracklet is only associated to one and only one track. This can also help reduce processing time for running in real-time.
+
+Each clique $$c$$ in the graph has a clique potential i.e. $$\psi_c = exp(w_c^T\phi(x,y_c))$$. Note that the implied normalization term in Equation 15 can be ommited when solving for the maximum-liklihood labeling $$y$$ for a particlar set of observations $$x$$.
+
+$$
+\begin{matrix}
+P(y|x, \omega) &\propto& \prod\limits_c\psi_c(y_c|x,\omega) \\
+&\propto & \prod\limits_{s\in V} \psi_s{y_s|x, \omega) \prod\limits_{s,t \in E} \psi_{s,t}(y_s, y_t|x, \omega)
+\end{matrix}
+$$
+
+Features \phi must be provided ( or can be extracted from data with supervised or unsupervised learning) and weights $$\omega$$ are learned from data. The observations $$x$$ can be either sensor measurements (for data association) or sensor-level tracks ( for track-to-track association). The Markov property of CRFs can be interpreted in the context of multi-target tracking as assuming that the assignment of the observation to tracks within a particular spatio-temporal section of the surveillance region is independent of how they are assigned to tracks elsewher-conditional on all observations. 
