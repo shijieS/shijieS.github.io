@@ -51,6 +51,3 @@ $$
 
 where $$data$$ is our original data, $$t$$ is the iteration steps, and $$w$$ is the smooth weigths which is shown as a scroll widgets in tensorboard.
 
-## The 
-
-Enter text in [Markdown](http://daringfireball.net/projects/markdown/). Use the toolbar above, or click the **?** button for formatting help.
