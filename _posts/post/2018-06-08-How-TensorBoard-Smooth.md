@@ -52,7 +52,7 @@ $$
 \left\{\begin{matrix}
 f(0) &=& data[0] \\
 f(t) &=& f(t-1)*w + (1-w)*data[t]
-\end{matrix}
+\end{matrix}\right.
 $$
 
 where $$data$$ is our original data, $$t$$ is the iteration steps, and $$w$$ is the smooth weigths which is shown as a scroll widgets in tensorboard.
