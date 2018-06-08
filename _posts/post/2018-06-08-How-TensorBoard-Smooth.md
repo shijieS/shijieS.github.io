@@ -1,6 +1,12 @@
 ---
 date: '2018-06-08 08:47 +0800'
-published: false
+published: true
+layout: post
+categories:
+  - tools
+tags:
+  - deep learning
+comments: '1'
 ---
 Currently, I find if I use a smooth window then I'll get a better result than tensorflow smooth function. So I deep into the smooth function of tensorboard.
 
